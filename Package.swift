@@ -17,16 +17,8 @@ let package = Package(
     targets: [
         .target(
             name: "TOSegmentedControl",
-            path: ".",
-            sources: [
-                "TOSegmentedControl/TOSegmentedControl.m",
-                "TOSegmentedControl/Private/TOSegmentedControlSegment.m",
-            ],
-            publicHeadersPath: "include"
-        ),
-        .testTarget(
-            name: "TOSegmentedControlTests",
-            dependencies: ["TOSegmentedControl"],
-            path: "TOSegmentedControlTests"),
-    ]
+            path: "TOSegmentedControl"
+        )
+    ],
+	swiftLanguageVersions: [.v5]
 )
